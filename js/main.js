@@ -345,11 +345,11 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     "analisa-keuangan": {
-      cat: "Proyek Magang • CV OTWGUSAHA ID",
+      cat: "Proyek Magang • OTW Computer Gusaha",
       title: "Aplikasi Analisa Keuangan & Kredit AI",
       img: "assets/images/projects/analisa-keuangan.jpg",
       tags: ["Web App", "AI 5C Scoring", "SLIK OJK", "Magang"],
-      desc: "Proyek yang sedang saya kerjakan saat magang di CV OTWGUSAHA ID. Membantu penyusunan laporan analisis kelayakan kredit dan scoring 5C secara otomatis dengan data SLIK OJK untuk lembaga pembiayaan.",
+      desc: "Proyek yang sedang saya kerjakan saat magang di OTW Computer Gusaha. Membantu penyusunan laporan analisis kelayakan kredit dan scoring 5C secara otomatis dengan data SLIK OJK untuk lembaga pembiayaan.",
       role: "Ikut mengembangkan fitur web, tampilan dashboard analitik & scoring 5C, serta alur pengolahan data analisis keuangan.",
       links: [
         { label: "Repo Analisa Keuangan", url: "https://github.com/AhmadJafarShodiq/Analisa_keuangan", primary: true },
