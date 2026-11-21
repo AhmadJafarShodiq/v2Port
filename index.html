@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Ahmad Ja'far Shodiq — Web Developer &amp; Mahasiswa Teknik Informatika</title>
+  <meta name="description"
+    content="Website pribadi dan portofolio Ahmad Ja'far Shodiq. Lulusan SMK RPL, mahasiswa Teknik Informatika angkatan 2023, Juara 3 KMIPN E-Government, Juara 1 SISKA, saat ini magang di CV OTWGUSAHA ID." />
+  <meta name="keywords"
+    content="Ahmad Ja'far Shodiq, Portofolio, Web Developer, Laravel, Flutter, Teknik Informatika, SMK RPL, JV Partner Malang, CV OTWGUSAHA ID, KMIPN 2025, E-Surat Badean, Smart Mosquito Cam" />
+  <meta name="author" content="Ahmad Ja'far Shodiq" />
+  <link rel="canonical" href="https://ahmadjafarshodiq.github.io/v2Port/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Ahmad Ja'far Shodiq — Portofolio &amp; Cerita Perjalanan" />
+  <meta property="og:description"
+    content="Kumpulan proyek web, mobile, desktop, IoT &amp; AI, serta cerita perjalanan dari SMK RPL sampai kuliah Teknik Informatika." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg" />
+
+  <!-- Fonts: Plus Jakarta Sans + Newsreader -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/styles.css?v=6" />
+</head>
+
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Subtle Custom Cursor (Desktop Only) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <span>LIHAT</span>
+  </div>
+
+  <!-- ================= STICKY NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#beranda" class="nav-brand">
+        Ahmad Ja'far<span>.</span>
+      </a>
+
+      <nav class="nav-links" id="navMenu" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#perjalanan">Perjalanan</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#galeri">Galeri Foto</a>
+        <a href="#kontak">Kontak</a>
+        <a href="assets/docs/CV-Ahmad-Jafar-Shodiq.pdf" target="_blank" rel="noopener noreferrer"
+          class="nav-mobile-cv">Unduh CV (PDF) &nearr;</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" id="themeToggle" aria-label="Ganti mode terang atau gelap"
+          title="Ganti tema">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="assets/docs/CV-Ahmad-Jafar-Shodiq.pdf" target="_blank" rel="noopener noreferrer"
+          class="btn btn-sm btn-primary nav-cv-btn">
+          CV
+        </a>
+        <button type="button" class="icon-btn menu-btn" id="menuToggle" aria-label="Buka menu navigasi"
+          aria-expanded="false">
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="hero-status">
+            <span class="dot-live"></span>
+            Teknik Informatika &bull; Magang CV OTWGUSAHA ID
+          </div>
+
+          <h1 class="hero-title">
+            Halo, saya <em>Ahmad Ja'far Shodiq.</em>
+          </h1>
+
+          <p class="hero-desc">
+            Mahasiswa <strong>Teknik Informatika</strong> angkatan 2023 dan lulusan <strong>SMK RPL</strong> yang
+            berfokus pada pengembangan aplikasi web dengan <strong>Laravel</strong> dan <strong>MySQL</strong>.
+            Berpengalaman membangun proyek kampus, kompetisi nasional, dan magang industri dengan integrasi mobile
+            (Flutter), IoT, serta AI.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#proyek" class="btn btn-primary">
+              Lihat Proyek Pilihan <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="assets/docs/CV-Ahmad-Jafar-Shodiq.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline">
+              Unduh CV <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/AhmadJafarShodiq" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub Ahmad Ja'far Shodiq">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ahmadjafarshodiq" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn Ahmad Ja'far Shodiq">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="mailto:ahmadjafarshodiq10@gmail.com" aria-label="Email Ahmad Ja'far Shodiq">
+              <i class="fa-regular fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-orbit-bg" aria-hidden="true">
+            <span class="orbit-decor orbit-decor--1"></span>
+            <span class="orbit-decor orbit-decor--2"></span>
+          </div>
+
+          <div class="profile-card" id="profileCard">
+            <div class="profile-photo-wrap">
+              <img src="assets/images/profile.jpg" alt="Foto Ahmad Ja'far Shodiq" class="profile-photo" width="360"
+                height="340" />
+            </div>
+            <div class="profile-meta">
+              <div>
+                <strong>Ahmad Ja'far Shodiq</strong>
+                <span>Web Developer &bull; Indonesia</span>
+              </div>
+              <span class="badge-tag">RPL '20 &rarr; TI '23</span>
+            </div>
+          </div>
+
+          <div class="hero-float-chip chip-bottom" aria-hidden="true">
+            <i class="fa-solid fa-code"></i> Laravel &bull; Flutter &bull; AI
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TENTANG SAYA & SKILL ================= -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">Tentang Saya</span>
+          <h2 class="section-title">Cerita singkat dari SMK RPL sampai kuliah Teknik Informatika.</h2>
+        </div>
+
+        <div class="about-bento">
+          <article class="card about-story">
+            <h3>Profil Singkat</h3>
+            <p>
+              Saya memulai perjalanan di bidang pengembangan perangkat lunak sejak <strong>SMK jurusan Rekayasa
+                Perangkat Lunak (2020&ndash;2023)</strong>. Proyek awal yang saya kerjakan adalah pembuatan
+              <strong>web portofolio</strong> serta <strong>aplikasi kasir desktop menggunakan VB dan C#</strong>.
+              Selama SMK, saya juga menjalani magang industri di <strong>Software House JV Partner Malang</strong>
+              sehingga terbiasa dengan alur kerja tim di lingkungan industri.
+            </p>
+            <p>
+              Melanjutkan studi di <strong>Teknik Informatika angkatan 2023</strong>, saya aktif mengerjakan proyek
+              kampus dan mengikuti kompetisi. Pada semester 1&ndash;2, <strong>aplikasi kasir apotek desktop</strong>
+              yang saya bangun meraih <strong>Juara 1 SISKA</strong> dan <strong>Juara Poster Aplikasi EPIM</strong>.
+              Selanjutnya, saya meraih <strong>Juara 3 kategori Aplikasi Web &amp; Mobile</strong> melalui
+              <strong>E-Surat Badean</strong> (sistem surat Kelurahan Badean, Bondowoso), serta <strong>Juara 3 KMIPN
+                kategori E-Government</strong> melalui aplikasi <strong>Smart Mosquito Cam (AI)</strong>.
+            </p>
+            <p>
+              Saat ini di masa kuliah, saya menjalani magang di <strong>CV OTWGUSAHA ID</strong> dengan mengerjakan
+              <strong>aplikasi analisa keuangan &amp; kelayakan kredit berbasis AI</strong>, sekaligus menyusun
+              <strong>artikel jurnal ilmiah</strong> yang saat ini berada dalam tahap proses <em>review</em>. Ke depan,
+              saya berfokus memperdalam jalur <strong>Full-Stack Web Development (Laravel, REST API, MySQL)</strong>
+              sekaligus mengembangkan kemampuan integrasi mobile dan AI.
+            </p>
+          </article>
+
+          <aside class="card about-facts">
+            <h3>Prestasi &amp; Fakta Singkat</h3>
+            <ul class="fact-list">
+              <li>
+                <span class="fact-label">Juara 3 KMIPN (E-Government)</span>
+                <strong>Smart Mosquito Cam (AI)</strong>
+                <small>Kompetisi Mahasiswa Informatika Politeknik Nasional</small>
+              </li>
+              <li>
+                <span class="fact-label">Juara 3 Web &amp; Mobile</span>
+                <strong>E-Surat Badean</strong>
+                <small>Sistem surat-menyurat Kelurahan Badean, Bondowoso</small>
+              </li>
+              <li>
+                <span class="fact-label">Juara 1 SISKA &amp; Juara Poster EPIM</span>
+                <strong>Aplikasi Kasir Apotek Desktop</strong>
+                <small>Proyek kuliah semester 1&ndash;2</small>
+              </li>
+              <li>
+                <span class="fact-label">Pengalaman Magang</span>
+                <strong>CV OTWGUSAHA ID &amp; JV Partner Malang</strong>
+                <small>Magang kuliah (sekarang) &amp; magang SMK RPL</small>
+              </li>
+              <li>
+                <span class="fact-label">Publikasi Ilmiah (Under Review)</span>
+                <strong>Artikel Jurnal Ilmiah</strong>
+                <small>Sedang dalam tahap proses review</small>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <!-- Tech Stack: Penjelasan Ringkas + Animasi Melingkar (Tanpa Dobel) -->
+        <div class="stack-wrap">
+          <div class="stack-split">
+            <div class="stack-left">
+              <div class="stack-header">
+                <span class="section-kicker">Tech Stack</span>
+                <h3>Alat &amp; Teknologi yang Dipakai</h3>
+                <p>
+                  Fokus utama saya berada di pengembangan web dengan <strong>Laravel &amp; MySQL</strong>, didukung
+                  pengalaman membangun aplikasi mobile, desktop, hingga integrasi IoT dan AI. Tap atau arahkan kursor
+                  ke ikon di samping untuk melihat detailnya.
+                </p>
+              </div>
+
+              <ul class="stack-summary">
+                <li>
+                  <span class="summary-dot dot-navy"></span>
+                  <div>
+                    <strong>Web &amp; Backend Utama</strong>
+                    <span>Laravel, PHP, MySQL, REST API, HTML/CSS, JavaScript, Tailwind.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="summary-dot dot-terra"></span>
+                  <div>
+                    <strong>Mobile &amp; Desktop</strong>
+                    <span>Flutter (Dart) untuk aplikasi mobile, serta VB.NET &amp; C# untuk aplikasi desktop.</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="summary-dot dot-teal"></span>
+                  <div>
+                    <strong>Integrasi IoT &amp; AI</strong>
+                    <span>Python, Computer Vision (Face Recognition &amp; Mosquito Cam), dan monitoring IoT.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Animasi Melingkar (Orbiting Tech Stack) -->
+            <div class="stack-right">
+              <div class="orbit-stage" aria-label="Animasi melingkar teknologi yang dipakai">
+                <div class="orbit-ring orbit-ring--outer">
+                  <div class="orbit-node" style="--angle: 0deg" data-tech="Laravel"
+                    data-note="Framework utama untuk bikin web &amp; backend">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                      alt="Laravel" loading="lazy" />
+                  </div>
+                  <div class="orbit-node" style="--angle: 51.4deg" data-tech="PHP"
+                    data-note="Bahasa backend untuk logika server">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                      loading="lazy" />
+                  </div>
+                  <div class="orbit-node" style="--angle: 102.8deg" data-tech="MySQL"
+                    data-note="Database utama di hampir semua proyek">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                      loading="lazy" />
+                  </div>
+                  <div class="orbit-node" style="--angle: 154.2deg" data-tech="Flutter"
+                    data-note="Untuk bikin aplikasi mobile lintas platform">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                      alt="Flutter" loading="lazy" />
+                  </div>
+                  <div class="orbit-node" style="--angle: 205.6deg" data-tech="Python"
+                    data-note="Dipakai saat integrasi AI &amp; deteksi gambar">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                      alt="Python" loading="lazy" />
+                  </div>
+                  <div class="orbit-node" style="--angle: 257deg" data-tech="C# &amp; VB"
+                    data-note="Dipakai untuk aplikasi kasir desktop sejak SMK">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"
+                      loading="lazy" />
+                  </div>
+                  <div class="orbit-node" style="--angle: 308.4deg" data-tech="Git &amp; GitHub"
+                    data-note="Simpan kode &amp; kolaborasi proyek">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                      loading="lazy" />
+                  </div>
+                </div>
+
+                <div class="orbit-ring orbit-ring--inner">
+                  <div class="orbit-node orbit-node--small" style="--angle: 30deg" data-tech="REST API"
+                    data-note="Penghubung web, mobile, dan server">
+                    <i class="fa-solid fa-plug"></i>
+                  </div>
+                  <div class="orbit-node orbit-node--small" style="--angle: 150deg" data-tech="AI Vision"
+                    data-note="FaceReq, Mosquito Cam &amp; IoT Kangkung">
+                    <i class="fa-solid fa-eye"></i>
+                  </div>
+                  <div class="orbit-node orbit-node--small" style="--angle: 270deg" data-tech="Tailwind &amp; CSS"
+                    data-note="Styling tampilan web yang rapi &amp; responsif">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                      alt="Tailwind CSS" loading="lazy" />
+                  </div>
+                </div>
+
+                <div class="orbit-center">
+                  <span class="orbit-kicker">TECH STACK</span>
+                  <strong class="orbit-title" id="orbitTitle">Alat <em>Utama</em></strong>
+                  <small class="orbit-note" id="orbitNote">Tap atau arahkan ke ikon</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PERJALANAN (INTERACTIVE STACKED CARDS) ================= -->
+    <section class="section section-alt" id="perjalanan">
+      <div class="container">
+        <div class="journey-split">
+          <div class="journey-left">
+            <span class="section-kicker">Perjalanan</span>
+            <h2 class="section-title">Dari SMK RPL sampai kuliah &amp; magang industri.</h2>
+            <p class="section-sub">
+              Klik kartu di samping atau gunakan tombol panah untuk menelusuri perjalanan belajar, prestasi, dan
+              pengalaman magang saya.
+            </p>
+
+            <div class="deck-controls">
+              <button type="button" class="icon-btn" id="prevExpBtn" aria-label="Kartu sebelumnya">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="deck-dots" id="expDots" role="tablist" aria-label="Pilih kartu perjalanan"></div>
+              <button type="button" class="icon-btn" id="nextExpBtn" aria-label="Kartu berikutnya">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="journey-right">
+            <div class="exp-deck" id="expDeck" aria-live="polite">
+              <article class="exp-card exp-card--navy" data-index="0">
+                <div class="exp-top">
+                  <span class="exp-pill">Magang Kuliah</span>
+                  <span>2026 &bull; Sekarang</span>
+                </div>
+                <div class="exp-mid">
+                  <h3>CV OTWGUSAHA ID</h3>
+                  <p>
+                    Menjalani magang dengan mengerjakan pengembangan <strong>aplikasi analisa keuangan &amp; kelayakan
+                      kredit berbasis AI</strong> (scoring 5C dan integrasi SLIK OJK).
+                  </p>
+                </div>
+                <div class="exp-foot">
+                  <span>Web App &bull; AI Analytics</span>
+                  <span>Klik kartu &rarr;</span>
+                </div>
+              </article>
+
+              <article class="exp-card exp-card--terra" data-index="1">
+                <div class="exp-top">
+                  <span class="exp-pill">Juara 3 KMIPN</span>
+                  <span>2025</span>
+                </div>
+                <div class="exp-mid">
+                  <h3>Smart Mosquito Cam (AI)</h3>
+                  <p>
+                    Meraih <strong>Juara 3 KMIPN kategori E-Government</strong> dengan mengembangkan aplikasi
+                    <strong>Smart Mosquito Cam</strong> berbasis AI untuk membantu deteksi nyamuk.
+                  </p>
+                </div>
+                <div class="exp-foot">
+                  <span>E-Government &bull; Computer Vision</span>
+                  <span>Klik kartu &rarr;</span>
+                </div>
+              </article>
+
+              <article class="exp-card exp-card--teal" data-index="2">
+                <div class="exp-top">
+                  <span class="exp-pill">Kuliah TI '23 &bull; Prestasi</span>
+                  <span>2023 &ndash; 2025</span>
+                </div>
+                <div class="exp-mid">
+                  <h3>SISKA, EPIM &amp; E-Surat Badean</h3>
+                  <p>
+                    Meraih <strong>Juara 1 SISKA</strong> &amp; <strong>Juara Poster EPIM</strong> lewat aplikasi kasir
+                    apotek desktop, serta <strong>Juara 3 Web &amp; Mobile</strong> lewat <strong>E-Surat Badean</strong>
+                    (Kelurahan Badean, Bondowoso).
+                  </p>
+                </div>
+                <div class="exp-foot">
+                  <span>Desktop &bull; Web &amp; Mobile</span>
+                  <span>Klik kartu &rarr;</span>
+                </div>
+              </article>
+
+              <article class="exp-card exp-card--forest" data-index="3">
+                <div class="exp-top">
+                  <span class="exp-pill">SMK RPL &amp; Magang</span>
+                  <span>2020 &ndash; 2023</span>
+                </div>
+                <div class="exp-mid">
+                  <h3>SMK RPL &amp; JV Partner Malang</h3>
+                  <p>
+                    Memulai dari proyek web portofolio dan aplikasi kasir desktop pakai <strong>VB &amp; C#</strong>,
+                    lalu menjalani magang industri di <strong>Software House JV Partner Malang</strong>.
+                  </p>
+                </div>
+                <div class="exp-foot">
+                  <span>VB.NET &bull; C# &bull; Industri</span>
+                  <span>Kembali ke awal &rarr;</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYEK (3 FAVORIT + LIHAT SEMUA) ================= -->
+    <section class="section" id="proyek">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="section-kicker">Proyek</span>
+            <h2 class="section-title">Proyek pilihan &amp; arsip karya.</h2>
+            <p class="section-sub">
+              Menampilkan 3 proyek favorit terlebih dahulu agar ringkas. Klik tombol di bawah atau pakai filter untuk
+              melihat seluruh proyek.
+            </p>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filter proyek berdasarkan kategori">
+            <button type="button" class="filter-btn is-active" data-filter="all">Favorit &amp; Semua</button>
+            <button type="button" class="filter-btn" data-filter="ai">AI &amp; IoT</button>
+            <button type="button" class="filter-btn" data-filter="web">Web</button>
+            <button type="button" class="filter-btn" data-filter="mobile">Mobile</button>
+            <button type="button" class="filter-btn" data-filter="desktop">Desktop</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- ===== 3 PROYEK FAVORIT (TAMPIL AWAL) ===== -->
+
+          <!-- Favorit 1: Smart Mosquito Cam -->
+          <article class="project-card card" data-fav="true" data-cat="ai" data-id="mosquito-cam" data-cursor="view"
+            tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/mos.jpg" alt="Smart Mosquito Cam AI Juara 3 KMIPN" loading="lazy" />
+              <span class="project-pill pill-win"><i class="fa-solid fa-trophy"></i> Juara 3 KMIPN</span>
+            </div>
+            <div class="project-body">
+              <h3>Smart Mosquito Cam (AI)</h3>
+              <p>Aplikasi kamera terintegrasi AI untuk mendeteksi nyamuk. Meraih Juara 3 KMIPN kategori E-Government.</p>
+              <div class="project-tags">
+                <span>AI Vision</span><span>Python</span><span>E-Government</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Favorit 2: Aplikasi Analisa Keuangan (Magang) -->
+          <article class="project-card card" data-fav="true" data-cat="ai web" data-id="analisa-keuangan"
+            data-cursor="view" tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/analisa-keuangan.jpg"
+                alt="Aplikasi Analisa Keuangan dan Analisis Kelayakan Kredit 5C di OTW GUSAHA INDONESIA" loading="lazy" />
+              <span class="project-pill">Magang &bull; CV OTWGUSAHA ID</span>
+            </div>
+            <div class="project-body">
+              <h3>Aplikasi Analisa Keuangan &amp; Kredit AI</h3>
+              <p>Proyek magang di CV OTWGUSAHA ID untuk otomasi laporan analisis kelayakan kredit, scoring 5C, dan SLIK OJK.</p>
+              <div class="project-tags">
+                <span>Web App</span><span>AI 5C Scoring</span><span>Magang</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Favorit 3: E-Surat Badean -->
+          <article class="project-card card" data-fav="true" data-cat="web mobile" data-id="esurat-badean"
+            data-cursor="view" tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/surat.jpeg"
+                alt="E-Surat Badean sistem surat Kelurahan Badean Bondowoso" loading="lazy" />
+              <span class="project-pill pill-win"><i class="fa-solid fa-trophy"></i> Juara 3 Web &amp; Mobile</span>
+            </div>
+            <div class="project-body">
+              <h3>E-Surat Badean (Bondowoso)</h3>
+              <p>Aplikasi web &amp; mobile surat-menyurat untuk Kelurahan Badean, Bondowoso. Juara 3 kategori Web &amp; Mobile.</p>
+              <div class="project-tags">
+                <span>Web &amp; Mobile</span><span>E-Surat</span><span>Kelurahan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== PROYEK LAINNYA (MUNCUL SAAT KLIK LIHAT SEMUA) ===== -->
+
+          <!-- 4. FaceReq Absensi Wajah (Web + Mobile AI) -->
+          <article class="project-card card is-extra is-hidden" data-cat="ai web mobile" data-id="facereq"
+            data-cursor="view" tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/adminfacereq.png" alt="FaceReq sistem absensi deteksi wajah AI"
+                loading="lazy" />
+              <span class="project-pill">Web &amp; Mobile AI</span>
+            </div>
+            <div class="project-body">
+              <h3>FaceReq — Absensi Wajah AI</h3>
+              <p>Aplikasi absensi mobile dengan deteksi wajah (AI) &amp; lokasi, terhubung ke web admin Laravel via REST API.</p>
+              <div class="project-tags">
+                <span>Laravel</span><span>Flutter</span><span>Face Rec AI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Monitoring IoT & AI Tanaman Kangkung -->
+          <article class="project-card card is-extra is-hidden" data-cat="ai mobile" data-id="iot-kangkung"
+            data-cursor="view" tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/monitoring.jpeg"
+                alt="Aplikasi monitoring IoT dan AI untuk tanaman kangkung" loading="lazy" />
+              <span class="project-pill">IoT &amp; AI</span>
+            </div>
+            <div class="project-body">
+              <h3>Monitoring IoT &amp; AI Kangkung</h3>
+              <p>Aplikasi monitoring berbasis IoT dan AI untuk memantau kondisi dan pertumbuhan tanaman kangkung (Aquaponic).</p>
+              <div class="project-tags">
+                <span>IoT</span><span>AI</span><span>Mobile Monitoring</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== PROYEK LAINNYA (TERSEMBUNYI SAAT AWAL, MUNCUL SAAT KLIK LIHAT SEMUA) ===== -->
+
+          <!-- 6. Aplikasi Kasir Apotek Desktop -->
+          <article class="project-card card is-extra is-hidden" data-cat="desktop" data-id="apotek-desktop" tabindex="0"
+            role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/apotikdekstop.png" alt="Aplikasi Kasir Apotek Desktop Juara 1 SISKA"
+                loading="lazy" />
+              <span class="project-pill pill-win"><i class="fa-solid fa-trophy"></i> Juara 1 SISKA &amp; EPIM</span>
+            </div>
+            <div class="project-body">
+              <h3>Aplikasi Kasir Apotek Desktop</h3>
+              <p>Proyek semester 1&ndash;2 untuk transaksi kasir &amp; stok obat. Juara 1 SISKA dan Juara Poster Aplikasi EPIM.</p>
+              <div class="project-tags">
+                <span>Desktop</span><span>POS &amp; Stok</span><span>Database</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Company Profile & Admin Yayasan Raudhah -->
+          <article class="project-card card is-extra is-hidden" data-cat="web" data-id="yayasan-raudhah" tabindex="0"
+            role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/webraudhah.png" alt="Company Profile Yayasan Raudhah" loading="lazy" />
+              <span class="project-pill">Company Profile</span>
+            </div>
+            <div class="project-body">
+              <h3>Company Profile Yayasan Raudhah</h3>
+              <p>Website company profile Yayasan Raudhah lengkap dengan dashboard admin Laravel untuk kelola konten &amp; role.</p>
+              <div class="project-tags">
+                <span>Laravel</span><span>MySQL</span><span>Admin Panel</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. FaceReq Mobile View -->
+          <article class="project-card card is-extra is-hidden" data-cat="ai mobile" data-id="mobile-facereq"
+            tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/absenmobile-facedeteksimuakak.png" alt="Aplikasi Mobile FaceReq Flutter"
+                loading="lazy" />
+              <span class="project-pill">Mobile App</span>
+            </div>
+            <div class="project-body">
+              <h3>FaceReq Mobile (Flutter)</h3>
+              <p>Sisi aplikasi mobile Flutter untuk pemindaian wajah dan validasi lokasi GPS pada sistem absensi FaceReq.</p>
+              <div class="project-tags">
+                <span>Flutter</span><span>REST API</span><span>Face Rec</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Web & Mobile Beasiswa Masjid -->
+          <article class="project-card card is-extra is-hidden" data-cat="web mobile" data-id="beasiswa-masjid"
+            tabindex="0" role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/webbeasiswamasjid.png" alt="Web dan Mobile Beasiswa Masjid"
+                loading="lazy" />
+              <span class="project-pill">Web &amp; Mobile</span>
+            </div>
+            <div class="project-body">
+              <h3>Sistem Beasiswa Masjid</h3>
+              <p>Platform web pendaftaran &amp; seleksi beasiswa masjid disertai aplikasi mobile untuk absensi penerima.</p>
+              <div class="project-tags">
+                <span>Laravel</span><span>Flutter</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. GasKeun Platform -->
+          <article class="project-card card is-extra is-hidden" data-cat="web" data-id="gaskeun" tabindex="0"
+            role="button">
+            <div class="project-img">
+              <img src="assets/images/projects/gaskeunwebjoki.png" alt="Platform Web Manajemen Order GasKeun"
+                loading="lazy" />
+              <span class="project-pill">Web App</span>
+            </div>
+            <div class="project-body">
+              <h3>GasKeun — Manajemen Order</h3>
+              <p>Aplikasi web pemesanan layanan dengan alur pembagian tugas pekerja dan pantau status pengerjaan.</p>
+              <div class="project-tags">
+                <span>Laravel</span><span>Order System</span><span>Tracking</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-more-wrap">
+          <button type="button" class="btn btn-outline" id="toggleAllProjects">
+            Lihat Semua Proyek (10) <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALERI FOTO (GESER KE SAMPING / CAROUSEL) ================= -->
+    <section class="section section-alt" id="galeri">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="section-kicker">Galeri &amp; Dokumentasi</span>
+            <h2 class="section-title">Foto perjalanan dari SMK sampai kuliah.</h2>
+            <p class="section-sub">
+              Geser ke samping untuk melihat dokumentasi magang, lomba, sertifikat, dan momen kuliah.
+            </p>
+          </div>
+
+          <div class="gallery-controls-bar">
+            <div class="filter-bar" role="group" aria-label="Filter galeri foto">
+              <button type="button" class="gallery-filter-btn is-active" data-gfilter="all">Semua</button>
+              <button type="button" class="gallery-filter-btn" data-gfilter="smk">Masa SMK</button>
+              <button type="button" class="gallery-filter-btn" data-gfilter="kuliah">Masa Kuliah</button>
+              <button type="button" class="gallery-filter-btn" data-gfilter="lomba-magang">Lomba &amp; Magang</button>
+            </div>
+
+            <div class="carousel-arrows">
+              <button type="button" class="icon-btn" id="galPrev" aria-label="Geser galeri ke kiri">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button type="button" class="icon-btn" id="galNext" aria-label="Geser galeri ke kanan">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-track" id="galleryTrack">
+          <!-- 1. Magang CV OTWGUSAHA ID -->
+          <figure class="gallery-card card" data-gcat="lomba-magang">
+            <a href="assets/images/moments/magang-otwgusaha.jpg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/magang-otwgusaha.jpg"
+                alt="Dokumentasi magang di CV OTWGUSAHA ID" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Magang Kuliah &bull; 2026</span>
+              <h3>Magang di CV OTWGUSAHA ID</h3>
+              <p>Bersama tim dan mentor di CV OTWGUSAHA ID saat magang kuliah mengerjakan aplikasi analisa keuangan.</p>
+            </figcaption>
+          </figure>
+
+          <!-- 2. Juara 3 KMIPN (Panggung) -->
+          <figure class="gallery-card card" data-gcat="lomba-magang">
+            <a href="assets/images/moments/lomba-mosquitocam.jpg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/lomba-mosquitocam.jpg"
+                alt="Penganugerahan Juara 3 KMIPN Kategori E-Government" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Juara 3 KMIPN &bull; E-Government</span>
+              <h3>Penganugerahan Juara 3 KMIPN</h3>
+              <p>Momen pengumuman Juara III kategori E-Government (Dampak Layanan Publik) lewat Smart Mosquito Cam.</p>
+            </figcaption>
+          </figure>
+
+          <!-- 3. Sertifikat KMIPN -->
+          <figure class="gallery-card card" data-gcat="lomba-magang">
+            <a href="assets/images/moments/sertifikat-kmipn.jpeg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/sertifikat-kmipn.jpeg" alt="Sertifikat Juara 3 KMIPN 2025"
+                loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Sertifikat &bull; 2025</span>
+              <h3>Sertifikat KMIPN 2025</h3>
+              <p>Sertifikat resmi Kompetisi Mahasiswa Informatika Politeknik Nasional kategori E-Government.</p>
+            </figcaption>
+          </figure>
+
+          <!-- 4. Uji Coba Scan Mosquito ke Kader -->
+          <figure class="gallery-card card" data-gcat="lomba-magang kuliah">
+            <a href="assets/images/moments/uji-coba-mosquito-kader.jpg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/uji-coba-mosquito-kader.jpg"
+                alt="Uji coba scan Smart Mosquito Cam langsung ke kader" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Lapangan &bull; Smart Mosquito Cam</span>
+              <h3>Uji Coba Scan Mosquito ke Kader</h3>
+              <p>Demo dan pengujian langsung aplikasi Smart Mosquito Cam bersama kader di lapangan.</p>
+            </figcaption>
+          </figure>
+
+          <!-- 5. Pameran Kampus AQUANEX (IoT & AI Kangkung) -->
+          <figure class="gallery-card card" data-gcat="kuliah">
+            <a href="assets/images/moments/kuliah-1.jpg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/kuliah-1.jpg"
+                alt="Pameran kampus Stand 15 AQUANEX monitoring IoT dan AI kangkung" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Pameran Kampus &bull; IoT &amp; AI</span>
+              <h3>Pameran Prototipe AQUANEX</h3>
+              <p>Menampilkan sistem monitoring IoT &amp; AI untuk tanaman kangkung bersama tim di pameran kampus.</p>
+            </figcaption>
+          </figure>
+
+          <!-- 6. TIF Exhibition 2024 -->
+          <figure class="gallery-card card" data-gcat="kuliah lomba-magang">
+            <a href="assets/images/moments/tif-exhibition-2024.jpg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/tif-exhibition-2024.jpg"
+                alt="TIF Exhibition 2024 Politeknik Negeri Jember" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Kuliah &bull; 2024</span>
+              <h3>TIF Exhibition 2024</h3>
+              <p>Dokumentasi pameran produk mahasiswa Teknik Informatika bersama tim dan sertifikat penghargaan.</p>
+            </figcaption>
+          </figure>
+
+          <!-- 7. Masa SMK RPL -->
+          <figure class="gallery-card card" data-gcat="smk">
+            <a href="assets/images/moments/smk-1.jpg" target="_blank" rel="noopener noreferrer" class="gallery-media">
+              <img src="assets/images/moments/smk-1.jpg" alt="Belajar coding saat SMK jurusan RPL" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">SMK RPL &bull; 2020&ndash;2023</span>
+              <h3>Awal Belajar Ngoding di SMK RPL</h3>
+              <p>Momen saat masih di SMK RPL belajar membuat web portofolio dan aplikasi kasir desktop (VB &amp; C#).</p>
+            </figcaption>
+          </figure>
+
+          <!-- 8. Magang SMK JV Partner Malang -->
+          <figure class="gallery-card card" data-gcat="smk lomba-magang">
+            <a href="assets/images/moments/smk-jvpartner.jpg" target="_blank" rel="noopener noreferrer"
+              class="gallery-media">
+              <img src="assets/images/moments/smk-jvpartner.jpg"
+                alt="Dokumentasi masa magang SMK di JV Partner Malang" loading="lazy" />
+            </a>
+            <figcaption>
+              <span class="gallery-badge">Magang SMK &bull; Malang</span>
+              <h3>Magang di Software House JV Partner</h3>
+              <p>Pengalaman magang industri pertama saat masih SMK di Malang.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section class="section" id="kontak">
+      <div class="container">
+        <div class="contact-card card">
+          <div class="contact-text">
+            <span class="section-kicker">Kontak</span>
+            <h2 class="section-title">Terbuka untuk diskusi proyek dan peluang karier.</h2>
+            <p>
+              Saya terbuka untuk kolaborasi proyek, freelance, maupun peluang kerja full-time setelah lulus. Silakan
+              hubungi saya melalui email atau LinkedIn di samping.
+            </p>
+            <a href="mailto:ahmadjafarshodiq10@gmail.com" class="btn btn-primary">
+              Kirim Email <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:ahmadjafarshodiq10@gmail.com" class="contact-row">
+              <span class="contact-icon"><i class="fa-regular fa-envelope"></i></span>
+              <div>
+                <small>Email</small>
+                <strong>ahmadjafarshodiq10@gmail.com</strong>
+              </div>
+            </a>
+
+            <a href="https://github.com/AhmadJafarShodiq" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+              <div>
+                <small>GitHub</small>
+                <strong>github.com/AhmadJafarShodiq</strong>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ahmadjafarshodiq" target="_blank" rel="noopener noreferrer"
+              class="contact-row">
+              <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <div>
+                <small>LinkedIn</small>
+                <strong>linkedin.com/in/ahmadjafarshodiq</strong>
+              </div>
+            </a>
+
+            <a href="assets/docs/CV-Ahmad-Jafar-Shodiq.pdf" target="_blank" rel="noopener noreferrer"
+              class="contact-row">
+              <span class="contact-icon"><i class="fa-regular fa-file-lines"></i></span>
+              <div>
+                <small>Curriculum Vitae</small>
+                <strong>Unduh CV (PDF)</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="yearNow"></span> Ahmad Ja'far Shodiq.</p>
+      <p>Dibuat di Indonesia &bull; Laravel, Flutter, IoT &amp; AI</p>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL DETAIL PROYEK ================= -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+    aria-hidden="true">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Tutup jendela">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-img-wrap" id="modalImgWrap">
+        <img src="" alt="" id="modalImg" />
+      </div>
+
+      <div class="modal-content">
+        <span class="modal-cat" id="modalCat">Proyek</span>
+        <h3 id="modalTitle">Judul Proyek</h3>
+        <div class="project-tags" id="modalTags"></div>
+
+        <div class="modal-section">
+          <h4>Tentang Proyek</h4>
+          <p id="modalDesc"></p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Yang Saya Kerjakan</h4>
+          <p id="modalRole"></p>
+        </div>
+
+        <div class="modal-actions" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=3" defer></script>
+</body>
+
+</html>
